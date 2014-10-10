@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F249EF3019E84E760031A46F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249EF2F19E84E760031A46F /* AppDelegate.swift */; };
+		F249EF3219E84E760031A46F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249EF3119E84E760031A46F /* ViewController.swift */; };
+		F249EF3519E84E760031A46F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F249EF3319E84E760031A46F /* Main.storyboard */; };
+		F249EF3719E84E760031A46F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F249EF3619E84E760031A46F /* Images.xcassets */; };
+		F249EF3A19E84E760031A46F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F249EF3819E84E760031A46F /* LaunchScreen.xib */; };
+		F249EF4619E84E760031A46F /* SwiftRotateAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249EF4519E84E760031A46F /* SwiftRotateAnimationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F249EF4019E84E760031A46F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F249EF2219E84E760031A46F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F249EF2919E84E760031A46F;
+			remoteInfo = SwiftRotateAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F249EF2A19E84E760031A46F /* SwiftRotateAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRotateAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F249EF2E19E84E760031A46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F249EF2F19E84E760031A46F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F249EF3119E84E760031A46F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F249EF3419E84E760031A46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F249EF3619E84E760031A46F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F249EF3919E84E760031A46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F249EF3F19E84E760031A46F /* SwiftRotateAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftRotateAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F249EF4419E84E760031A46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F249EF4519E84E760031A46F /* SwiftRotateAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRotateAnimationTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F249EF2719E84E760031A46F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F249EF3C19E84E760031A46F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F249EF2119E84E760031A46F = {
+			isa = PBXGroup;
+			children = (
+				F249EF2C19E84E760031A46F /* SwiftRotateAnimation */,
+				F249EF4219E84E760031A46F /* SwiftRotateAnimationTests */,
+				F249EF2B19E84E760031A46F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F249EF2B19E84E760031A46F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F249EF2A19E84E760031A46F /* SwiftRotateAnimation.app */,
+				F249EF3F19E84E760031A46F /* SwiftRotateAnimationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F249EF2C19E84E760031A46F /* SwiftRotateAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F249EF2F19E84E760031A46F /* AppDelegate.swift */,
+				F249EF3119E84E760031A46F /* ViewController.swift */,
+				F249EF3319E84E760031A46F /* Main.storyboard */,
+				F249EF3619E84E760031A46F /* Images.xcassets */,
+				F249EF3819E84E760031A46F /* LaunchScreen.xib */,
+				F249EF2D19E84E760031A46F /* Supporting Files */,
+			);
+			path = SwiftRotateAnimation;
+			sourceTree = "<group>";
+		};
+		F249EF2D19E84E760031A46F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F249EF2E19E84E760031A46F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F249EF4219E84E760031A46F /* SwiftRotateAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				F249EF4519E84E760031A46F /* SwiftRotateAnimationTests.swift */,
+				F249EF4319E84E760031A46F /* Supporting Files */,
+			);
+			path = SwiftRotateAnimationTests;
+			sourceTree = "<group>";
+		};
+		F249EF4319E84E760031A46F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F249EF4419E84E760031A46F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F249EF2919E84E760031A46F /* SwiftRotateAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F249EF4919E84E760031A46F /* Build configuration list for PBXNativeTarget "SwiftRotateAnimation" */;
+			buildPhases = (
+				F249EF2619E84E760031A46F /* Sources */,
+				F249EF2719E84E760031A46F /* Frameworks */,
+				F249EF2819E84E760031A46F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftRotateAnimation;
+			productName = SwiftRotateAnimation;
+			productReference = F249EF2A19E84E760031A46F /* SwiftRotateAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F249EF3E19E84E760031A46F /* SwiftRotateAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F249EF4C19E84E760031A46F /* Build configuration list for PBXNativeTarget "SwiftRotateAnimationTests" */;
+			buildPhases = (
+				F249EF3B19E84E760031A46F /* Sources */,
+				F249EF3C19E84E760031A46F /* Frameworks */,
+				F249EF3D19E84E760031A46F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F249EF4119E84E760031A46F /* PBXTargetDependency */,
+			);
+			name = SwiftRotateAnimationTests;
+			productName = SwiftRotateAnimationTests;
+			productReference = F249EF3F19E84E760031A46F /* SwiftRotateAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F249EF2219E84E760031A46F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Andrew Bancroft";
+				TargetAttributes = {
+					F249EF2919E84E760031A46F = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					F249EF3E19E84E760031A46F = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = F249EF2919E84E760031A46F;
+					};
+				};
+			};
+			buildConfigurationList = F249EF2519E84E760031A46F /* Build configuration list for PBXProject "SwiftRotateAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F249EF2119E84E760031A46F;
+			productRefGroup = F249EF2B19E84E760031A46F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F249EF2919E84E760031A46F /* SwiftRotateAnimation */,
+				F249EF3E19E84E760031A46F /* SwiftRotateAnimationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F249EF2819E84E760031A46F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F249EF3519E84E760031A46F /* Main.storyboard in Resources */,
+				F249EF3A19E84E760031A46F /* LaunchScreen.xib in Resources */,
+				F249EF3719E84E760031A46F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F249EF3D19E84E760031A46F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F249EF2619E84E760031A46F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F249EF3219E84E760031A46F /* ViewController.swift in Sources */,
+				F249EF3019E84E760031A46F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F249EF3B19E84E760031A46F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F249EF4619E84E760031A46F /* SwiftRotateAnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F249EF4119E84E760031A46F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F249EF2919E84E760031A46F /* SwiftRotateAnimation */;
+			targetProxy = F249EF4019E84E760031A46F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F249EF3319E84E760031A46F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F249EF3419E84E760031A46F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F249EF3819E84E760031A46F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F249EF3919E84E760031A46F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F249EF4719E84E760031A46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F249EF4819E84E760031A46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F249EF4A19E84E760031A46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftRotateAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F249EF4B19E84E760031A46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftRotateAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F249EF4D19E84E760031A46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftRotateAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftRotateAnimation.app/SwiftRotateAnimation";
+			};
+			name = Debug;
+		};
+		F249EF4E19E84E760031A46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftRotateAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftRotateAnimation.app/SwiftRotateAnimation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F249EF2519E84E760031A46F /* Build configuration list for PBXProject "SwiftRotateAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F249EF4719E84E760031A46F /* Debug */,
+				F249EF4819E84E760031A46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F249EF4919E84E760031A46F /* Build configuration list for PBXNativeTarget "SwiftRotateAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F249EF4A19E84E760031A46F /* Debug */,
+				F249EF4B19E84E760031A46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F249EF4C19E84E760031A46F /* Build configuration list for PBXNativeTarget "SwiftRotateAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F249EF4D19E84E760031A46F /* Debug */,
+				F249EF4E19E84E760031A46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F249EF2219E84E760031A46F /* Project object */;
+}
