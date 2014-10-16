@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f6c-LZ-NAU">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Rotate Once-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftRotateAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,138 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaf-Ju-y7s">
+                                <rect key="frame" x="229" y="228" width="143" height="143"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCd-By-AzO">
+                                        <rect key="frame" x="41" y="42" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="bkz-uZ-PPD"/>
+                                            <constraint firstAttribute="height" constant="60" id="wSu-Hh-lLa"/>
+                                        </constraints>
+                                        <state key="normal" image="reload">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="refresh" destination="BYZ-38-t0r" eventType="touchUpInside" id="kdr-5h-g7l"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="QCd-By-AzO" secondAttribute="centerX" id="HGt-OY-0G5"/>
+                                    <constraint firstAttribute="width" constant="143" id="Zxu-cP-u8D"/>
+                                    <constraint firstAttribute="height" constant="143" id="i5K-ko-azg"/>
+                                    <constraint firstAttribute="centerY" secondItem="QCd-By-AzO" secondAttribute="centerY" id="tpY-aM-yd8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotate Once" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sg-1w-5AV">
+                                <rect key="frame" x="252" y="28" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="oaf-Ju-y7s" secondAttribute="centerX" id="NEC-aV-82x"/>
+                            <constraint firstItem="7sg-1w-5AV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ZgU-sL-Rkx"/>
+                            <constraint firstAttribute="centerX" secondItem="7sg-1w-5AV" secondAttribute="centerX" constant="-0.5" id="r6v-5Y-T1k"/>
+                            <constraint firstAttribute="centerY" secondItem="oaf-Ju-y7s" secondAttribute="centerY" id="wkd-Wk-zvM"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Rotate Once" id="QAH-wp-pAe"/>
+                    <connections>
+                        <outlet property="refreshButton" destination="QCd-By-AzO" id="d0U-KP-Esy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="989" y="-73"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Z91-U2-Wb2">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="f6c-LZ-NAU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="pYX-Jx-7fr">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="m5E-ox-4tr"/>
+                        <segue destination="0Qi-9h-Fb7" kind="relationship" relationship="viewControllers" id="kif-6Z-RPv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQc-rb-bV3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="136"/>
+        </scene>
+        <!--Rotate 1+ Times-->
+        <scene sceneID="9wD-cW-s4X">
+            <objects>
+                <viewController id="0Qi-9h-Fb7" customClass="ViewController2" customModule="SwiftRotateAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s46-pN-KeE"/>
+                        <viewControllerLayoutGuide type="bottom" id="vt2-vQ-4iw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bJx-TB-0yw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waA-J5-RWJ">
+                                <rect key="frame" x="229" y="228" width="143" height="143"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHD-Rf-Eo6">
+                                        <rect key="frame" x="41" y="42" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="0bN-LQ-DmI"/>
+                                            <constraint firstAttribute="height" constant="60" id="WtE-eQ-fHs"/>
+                                        </constraints>
+                                        <state key="normal" image="reload">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="refresh" destination="0Qi-9h-Fb7" eventType="touchUpInside" id="GTF-AC-Wyx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.086274512110000007" green="0.46274513010000001" blue="0.7019608021" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="RV9-EZ-TN1"/>
+                                    <constraint firstAttribute="centerX" secondItem="aHD-Rf-Eo6" secondAttribute="centerX" id="d78-2U-rkr"/>
+                                    <constraint firstAttribute="centerY" secondItem="aHD-Rf-Eo6" secondAttribute="centerY" id="osL-cC-Deh"/>
+                                    <constraint firstAttribute="width" constant="143" id="wYE-Iw-au1"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotate 1+ Times" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfB-DS-asJ">
+                                <rect key="frame" x="237" y="28" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="waA-J5-RWJ" secondAttribute="centerX" id="5QX-Ga-8Dq"/>
+                            <constraint firstItem="TfB-DS-asJ" firstAttribute="top" secondItem="s46-pN-KeE" secondAttribute="bottom" constant="8" id="V8q-Ux-PEW"/>
+                            <constraint firstAttribute="centerX" secondItem="TfB-DS-asJ" secondAttribute="centerX" constant="-0.5" id="WvJ-qN-EZ9"/>
+                            <constraint firstAttribute="centerY" secondItem="waA-J5-RWJ" secondAttribute="centerY" id="vqr-oA-Sw9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rotate 1+ Times" id="IGF-Oh-EST"/>
+                    <connections>
+                        <outlet property="refreshButton" destination="aHD-Rf-Eo6" id="Z0K-j5-nbb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2F-bM-4mv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989" y="582"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="reload" width="46" height="46"/>
+    </resources>
 </document>

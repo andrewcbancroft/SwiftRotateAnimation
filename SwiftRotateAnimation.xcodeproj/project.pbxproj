@@ -13,6 +13,9 @@
 		F249EF3719E84E760031A46F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F249EF3619E84E760031A46F /* Images.xcassets */; };
 		F249EF3A19E84E760031A46F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F249EF3819E84E760031A46F /* LaunchScreen.xib */; };
 		F249EF4619E84E760031A46F /* SwiftRotateAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249EF4519E84E760031A46F /* SwiftRotateAnimationTests.swift */; };
+		F249EF5019E84FBD0031A46F /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249EF4F19E84FBD0031A46F /* UIViewExtensions.swift */; };
+		F2B6FF3419ECD11A002859BD /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6FF3319ECD11A002859BD /* Timer.swift */; };
+		F2B6FF3619EE19B1002859BD /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6FF3519EE19B1002859BD /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		F249EF3F19E84E760031A46F /* SwiftRotateAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftRotateAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F249EF4419E84E760031A46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F249EF4519E84E760031A46F /* SwiftRotateAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRotateAnimationTests.swift; sourceTree = "<group>"; };
+		F249EF4F19E84FBD0031A46F /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		F2B6FF3319ECD11A002859BD /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		F2B6FF3519EE19B1002859BD /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +83,12 @@
 		F249EF2C19E84E760031A46F /* SwiftRotateAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				F249EF2F19E84E760031A46F /* AppDelegate.swift */,
-				F249EF3119E84E760031A46F /* ViewController.swift */,
 				F249EF3319E84E760031A46F /* Main.storyboard */,
+				F249EF4F19E84FBD0031A46F /* UIViewExtensions.swift */,
+				F249EF3119E84E760031A46F /* ViewController.swift */,
+				F2B6FF3519EE19B1002859BD /* ViewController2.swift */,
+				F2B6FF3319ECD11A002859BD /* Timer.swift */,
+				F249EF2F19E84E760031A46F /* AppDelegate.swift */,
 				F249EF3619E84E760031A46F /* Images.xcassets */,
 				F249EF3819E84E760031A46F /* LaunchScreen.xib */,
 				F249EF2D19E84E760031A46F /* Supporting Files */,
@@ -212,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B6FF3619EE19B1002859BD /* ViewController2.swift in Sources */,
 				F249EF3219E84E760031A46F /* ViewController.swift in Sources */,
+				F249EF5019E84FBD0031A46F /* UIViewExtensions.swift in Sources */,
 				F249EF3019E84E760031A46F /* AppDelegate.swift in Sources */,
+				F2B6FF3419ECD11A002859BD /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +419,7 @@
 				F249EF4B19E84E760031A46F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F249EF4C19E84E760031A46F /* Build configuration list for PBXNativeTarget "SwiftRotateAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +428,7 @@
 				F249EF4E19E84E760031A46F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
