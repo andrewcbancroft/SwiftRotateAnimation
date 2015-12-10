@@ -18,7 +18,7 @@ class ViewController2: UIViewController {
 		}
 	}
 	
-	override func animationDidStop(anim: CAAnimation!, finished flag: Bool) {
+	override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 		if self.shouldStopRotating == false {
 			self.refreshButton.rotate360Degrees(completionDelegate: self)
 		} else {
