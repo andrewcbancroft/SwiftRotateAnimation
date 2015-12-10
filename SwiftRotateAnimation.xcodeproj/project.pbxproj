@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C33828981C19FF9F00BD32E3 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33828971C19FF9F00BD32E3 /* ViewController3.swift */; };
 		F249EF3019E84E760031A46F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249EF2F19E84E760031A46F /* AppDelegate.swift */; };
 		F249EF3219E84E760031A46F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249EF3119E84E760031A46F /* ViewController.swift */; };
 		F249EF3519E84E760031A46F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F249EF3319E84E760031A46F /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C33828971C19FF9F00BD32E3 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		F249EF2A19E84E760031A46F /* SwiftRotateAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRotateAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F249EF2E19E84E760031A46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F249EF2F19E84E760031A46F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				F249EF4F19E84FBD0031A46F /* UIViewExtensions.swift */,
 				F249EF3119E84E760031A46F /* ViewController.swift */,
 				F2B6FF3519EE19B1002859BD /* ViewController2.swift */,
+				C33828971C19FF9F00BD32E3 /* ViewController3.swift */,
 				F2B6FF3319ECD11A002859BD /* Timer.swift */,
 				F249EF2F19E84E760031A46F /* AppDelegate.swift */,
 				F249EF3619E84E760031A46F /* Images.xcassets */,
@@ -225,6 +228,7 @@
 			files = (
 				F2B6FF3619EE19B1002859BD /* ViewController2.swift in Sources */,
 				F249EF3219E84E760031A46F /* ViewController.swift in Sources */,
+				C33828981C19FF9F00BD32E3 /* ViewController3.swift in Sources */,
 				F249EF5019E84FBD0031A46F /* UIViewExtensions.swift in Sources */,
 				F249EF3019E84E760031A46F /* AppDelegate.swift in Sources */,
 				F2B6FF3419ECD11A002859BD /* Timer.swift in Sources */,
