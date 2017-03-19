@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController2: UIViewController {
+class ViewController2: UIViewController, CAAnimationDelegate {
 	@IBOutlet weak var refreshButton: UIButton!
 	var isRotating = false
 	var shouldStopRotating = false
@@ -18,7 +18,7 @@ class ViewController2: UIViewController {
 		}
 	}
 	
-	override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+	func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
 		if self.shouldStopRotating == false {
 			self.refreshButton.rotate360Degrees(completionDelegate: self)
 		} else {

@@ -1,25 +1,25 @@
 import Foundation
 
 class Timer {
-	var timer = NSTimer()
+	var timer = Foundation.Timer()
 	let duration: Double
 	let completionHandler: () -> ()
-	private var elapsedTime: Double = 0.0
+	fileprivate var elapsedTime: Double = 0.0
 	
-	init(duration: Double, completionHandler: () -> ()) {
+	init(duration: Double, completionHandler: @escaping () -> ()) {
 		self.duration = duration
 		self.completionHandler = completionHandler
 	}
 	
 	func start() {
-		self.timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "tick", userInfo: nil, repeats: true)
+		self.timer = Foundation.Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(Timer.tick), userInfo: nil, repeats: true)
 	}
 	
 	func stop() {
 		self.timer.invalidate()
 	}
 	
-	@objc private func tick() {
+	@objc fileprivate func tick() {
 		self.elapsedTime += 1.0
 		if self.elapsedTime == self.duration {
 			self.stop()

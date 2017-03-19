@@ -1,23 +1,23 @@
 import UIKit
 
-class ViewController3: UIViewController {
+class ViewController3: UIViewController, CAAnimationDelegate {
     @IBOutlet weak var refreshImage: UIImageView!
 
     var isRotating = false
     var shouldStopRotating = false
     
-    @IBAction func startButtonTapped(sender: UIButton) {
+    @IBAction func startButtonTapped(_ sender: UIButton) {
         if self.isRotating == false {
             self.refreshImage.rotate360Degrees(completionDelegate: self)
             self.isRotating = true
         }
     }
     
-    @IBAction func stopButtonTapped(sender: UIButton) {
+    @IBAction func stopButtonTapped(_ sender: UIButton) {
         self.shouldStopRotating = true
     }
-    
-    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+	
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         if self.shouldStopRotating == false {
             self.refreshImage.rotate360Degrees(completionDelegate: self)
         } else {
